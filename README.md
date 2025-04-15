@@ -2,8 +2,6 @@
 
 This is a small backend app I built using **Java**, **Spring Boot 3.4.4**, and **Maven**. It simulates a basic cart system like the one you'd see in an e-commerce site.
 
-I did the whole thing in about **3 hours and a half**. The goal was to complete all requirements with clean, readable code.
-
 ---
 
 ## ✅ Features
