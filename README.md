@@ -30,44 +30,41 @@ I did the whole thing in about **3 hours and a half**. The goal was to complete 
 
 ## 📂 Project Structure
 
-src
-└── main
-    └── java
-        └── org.example.ecommerceob
-            ├── controller
-            │   └── CartController.java
-            ├── exception
-            │   ├── CartNotFoundException.java
-            │   └── InvalidProductException.java
-            ├── model
-            │   ├── Cart.java
-            │   └── Product.java
-            ├── repository
-            │   └── CartRepository.java
-            ├── scheduler
-            │   └── CartCleanupScheduler.java
-            ├── service
-            └── ECommerceObApplication.java
-
----
-
-## 📂 Project Structure (Test)
-
-src/test/java/org/example/ecommerceob/
-├── controller/
-│   └── CartControllerTest.java           
+src/
+├── main/
+│   ├── java/
+│   │   └── org/example/ecommerceob/
+│   │       ├── controller/
+│   │       │   └── CartController.java
+│   │       ├── exception/
+│   │       │   ├── CartNotFoundException.java
+│   │       │   └── InvalidProductException.java
+│   │       ├── model/
+│   │       │   ├── Cart.java
+│   │       │   └── Product.java
+│   │       ├── repository/
+│   │       │   └── CartRepository.java
+│   │       ├── scheduler/
+│   │       │   └── CartCleanupScheduler.java
+│   │       ├── service/
+│   │       │   └── CartService.java
+│   │       └── ECommerceObApplication.java
+│   └── resources/
+│ 
 │
-├── model/
-│   ├── CartTest.java                     
-│   └── ProductTest.java                  
-│
-├── repository/
-│   └── CartRepositoryTest.java           
-│
-├── service/
-│   └── CartServiceTest.java              
-│
-└── ECommerceObApplicationTests.java      
+└── test/
+    └── java/
+        └── org/example/ecommerceob/
+            ├── controller/
+            │   └── CartControllerTest.java
+            ├── model/
+            │   ├── CartTest.java
+            │   └── ProductTest.java
+            ├── repository/
+            │   └── CartRepositoryTest.java
+            ├── service/
+            │   └── CartServiceTest.java
+            └── ECommerceObApplicationTests.java
 
 ---
 
