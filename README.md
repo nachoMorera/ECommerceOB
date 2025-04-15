@@ -30,6 +30,7 @@ I did the whole thing in about **3 hours and a half**. The goal was to complete 
 
 ## 📂 Project Structure
 
+```
 src/
 ├── main/
 │   ├── java/
@@ -50,7 +51,6 @@ src/
 │   │       │   └── CartService.java
 │   │       └── ECommerceObApplication.java
 │   └── resources/
-│ 
 │
 └── test/
     └── java/
@@ -65,6 +65,7 @@ src/
             ├── service/
             │   └── CartServiceTest.java
             └── ECommerceObApplicationTests.java
+```
 
 ---
 
