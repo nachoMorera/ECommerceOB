@@ -110,12 +110,12 @@ Replace `{id}` with the cart ID from the previous step.
 ```json
 [
   {
-    "name": "Mouse",
-    "price": 25.50
+    "description": "Mouse",
+    "amount": 25.50
   },
   {
-    "name": "Monitor",
-    "price": 120.00
+    "description": "Monitor",
+    "amount": 120.00
   }
 ]
 ```
@@ -125,7 +125,13 @@ Replace `{id}` with the cart ID from the previous step.
 ```bash
 curl -X POST http://localhost:8080/cart/{id}/products \
      -H "Content-Type: application/json" \
-     -d '[{"name":"Mouse","price":25.50},{"name":"Monitor","price":120.00}]'
+     -d '[{
+           "description": "Mouse",
+           "amount": 25.50
+         }, {
+           "description": "Monitor",
+           "amount": 120.00
+         }]'
 ```
 
 ---
