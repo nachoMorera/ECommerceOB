@@ -75,3 +75,75 @@ Then just run:
 
 ```bash
 mvn spring-boot:run
+```
+
+---
+
+## 🧪 How to Test the Project
+
+You can use Postman or curl. Here are some examples:
+
+### 1. Create a Cart
+
+**POST** `/cart`
+
+```bash
+curl -X POST http://localhost:8080/cart
+```
+
+Returns a cart ID like:
+
+```json
+"ea2c81de-3456-4453-9f65-2fc827f227cd"
+```
+
+---
+
+### 2. Add Products to the Cart
+
+**POST** `/cart/{id}/products`
+
+Replace `{id}` with the cart ID from the previous step.
+
+**Example JSON to send:**
+
+```json
+[
+  {
+    "name": "Mouse",
+    "price": 25.50
+  },
+  {
+    "name": "Monitor",
+    "price": 120.00
+  }
+]
+```
+
+**Using curl:**
+
+```bash
+curl -X POST http://localhost:8080/cart/{id}/products \
+     -H "Content-Type: application/json" \
+     -d '[{"name":"Mouse","price":25.50},{"name":"Monitor","price":120.00}]'
+```
+
+---
+
+### 3. Get Cart by ID
+
+**GET** `/cart/{id}`
+
+```bash
+curl http://localhost:8080/cart/{id}
+```
+
+---
+
+### 4. Delete a Cart
+
+**DELETE** `/cart/{id}`
+
+```bash
+curl -X DELETE http://localhost:8080/cart/{id}
+```
